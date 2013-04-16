@@ -1,3 +1,4 @@
+
 ;(function (factory) {
   // Register as an anonymous AMD module if relevant, otherwise assume oldskool browser globals:
   if (typeof define === "function" && define.amd)
@@ -6,16 +7,19 @@
     factory(jQuery);
 })(function( $, undefined ) {
 
+  /* jshint laxcomma:true, asi:true, debug:true, curly:false, camelcase:true, browser:true */
+  /* global define, h3g, console, GClientGeocoder, google */
+
   // Monkeypatch older versions of jQuery to support event binding & delegation using the more convenient .on() method:
-  // This method minimises to less than ~150 bytes :)
+  // Can be minimised to around ~260, or down to ~160 bytes if you don't need the AMD Module wrapper. :)
   if( !$.fn.on ){
 
-    // New syntax:
-    // .on( events [, selector ] [, data ], handler(eventObject) )
+    // New syntax: (See http://api.jquery.com/on)
+    //   .on( events [, selector ] [, data ], handler(eventObject) )
     // Old syntax:
-    // .bind( eventType [, data ], handler(eventObject) )
-    // .live( eventType [, data ], handler(eventObject) )
-    // .delegate( selector, eventType [, data], handler(eventObject) )    
+    //   .bind( events [, data ], handler(eventObject) )
+    //   .live( events [, data ], handler(eventObject) )
+    //   .delegate( selector, events [, data], handler(eventObject) )    
 
     $.fn.on = function( events, selector, data, handler ){
 
