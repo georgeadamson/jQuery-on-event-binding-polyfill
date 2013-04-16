@@ -16,21 +16,18 @@ if( !$.fn.on ){
   //   .live( events [, data ], handler(eventObject) )
   //   .delegate( selector, events [, data], handler(eventObject) )    
 
-
-  /* 
-   * Tip: If you need AMD Module support, wrap this script inside the following syntax:
-   * ;(function (factory) {
-   *   // Register as an anonymous AMD module if relevant, otherwise assume oldskool browser globals:
-   *   if (typeof define === "function" && define.amd)
-   *     define(["jquery"], factory);
-   *   else
-   *     factory(jQuery);
-   * })(function( $ ) {
-   *
-   *  ...script goes here...
-   *
-   * });
-   */
+  // Tip: If you need AMD Module support, wrap this script inside the following syntax:
+  // ;(function (factory) {
+  //   // Register as an anonymous AMD module if relevant, otherwise assume oldskool browser globals:
+  //   if (typeof define === "function" && define.amd)
+  //     define(["jquery"], factory);
+  //   else
+  //     factory(jQuery);
+  // })(function( $ ) {
+  //
+  //  ...script goes here...
+  //
+  // });
 
 
   $.fn.on = function( events, selector, data, handler ){
