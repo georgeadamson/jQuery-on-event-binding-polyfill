@@ -1,4 +1,3 @@
-
 // https://github.com/georgeadamson/jQuery-on-event-binding-polyfill
 
 if( !$.fn.on ){
@@ -7,7 +6,6 @@ if( !$.fn.on ){
   // Can be minimised down to ~160 bytes if you don't need the AMD Module wrapper. :)
 
   /* jshint laxcomma:true, asi:true, debug:true, curly:false, camelcase:true, browser:true */
-  /* global define, h3g, console, GClientGeocoder, google */
 
   // New syntax: (See http://api.jquery.com/on)
   //   .on( events [, selector ] [, data ], handler(eventObject) )
