@@ -1,5 +1,4 @@
-
-// https://github.com/georgeadamson/jQuery-on-event-binding-pollyfill
+// https://github.com/georgeadamson/jQuery-on-event-binding-polyfill
 
 ;(function (factory) {
   // Register as an anonymous AMD module if relevant, otherwise assume oldskool browser globals:
