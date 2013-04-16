@@ -1,11 +1,13 @@
 
+// https://github.com/georgeadamson/jQuery-on-event-binding-pollyfill
+
 ;(function (factory) {
   // Register as an anonymous AMD module if relevant, otherwise assume oldskool browser globals:
   if (typeof define === "function" && define.amd)
     define(["jquery"], factory);
   else
     factory(jQuery);
-})(function( $, undefined ) {
+})(function( $ ) {
 
   /* jshint laxcomma:true, asi:true, debug:true, curly:false, camelcase:true, browser:true */
   /* global define, h3g, console, GClientGeocoder, google */
