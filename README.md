@@ -3,8 +3,14 @@ jQuery-on-event-binding-polyfill
 
 jQuery .on() method support for older (pre v1.7) versions of jQuery.
 
-Monkeypatches jQuery with a new jQuery.fn.on method if it is not already present.
+Why? If you're stuck using an older version of jQuery, this little plugin provides the syntactic sugar of the .on() method found in v1.7+
 
-Include a tag for this script just after your jquery tag to provide .on() event binding syntax in older versions of jQuery.
+How to use it: Include a tag for this script just after your jquery tag.
+Subsequent scripts can then bind events using the .on() syntax.
 
-Why? If you're stuck using an older version of jQuery on your project, this little plugin provides the syntactic sugar of the .on() method found in v1.7+
+<pre>
+    &lt;script&gt;jquery.min.js&lt;/script&gt;
+    &lt;script&gt;jquery-on.min.js&lt;/script&gt;
+</pre>
+
+Note: This only monkeypatches jQuery with a new jQuery.fn.on method if it is not already present.
