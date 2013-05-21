@@ -13,4 +13,4 @@ Subsequent scripts can then bind events using the .on() syntax.
     &lt;script&gt;jquery-on.min.js&lt;/script&gt;
 </pre>
 
-Note: This won't monkeypatch jQuery with a jQuery.fn.on method if it is already present.
+Note: This *won't* monkeypatch jQuery with a new jQuery.fn.on method if it is already present.
